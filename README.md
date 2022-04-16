@@ -41,7 +41,7 @@ The following pseudocode shows how the levels work:
 
      task = "You are stuck on a desert island and have found 20 locked suitcases. Find the keys."
 
-     *Append the player sprite to the player list*
+     Append the player sprite to the player list
 
      score = 0
 
@@ -50,22 +50,30 @@ The following pseudocode shows how the levels work:
     setup_level1
 
 The following pseudocode describes how the player moves:
-  MOVEMENT_SPEED = 5
-  IF key == arcade.key.up THEN
-      player_sprite.change_y = movement_speed
-  END IF
 
-  ELSE IF key == arcade.key.down THEN
-      player_sprite.change_y = -movement_speed
-  END IF
+   MOVEMENT_SPEED = 5
 
-  ELSE IF key == arcade.key.right THEN
-     player_sprite.change_x = movement_speed
-  END IF
+   IF key == arcade.key.up THEN
 
-  ELSE IF key == arcade.key.left THEN
-     player_sprite.change_x = -movement_speed
-  END IF
+       player_sprite.change_y = movement_speed
+
+   END IF
+
+   ELSE IF key == arcade.key.down THEN#
+
+       player_sprite.change_y = -movement_speed
+
+   END IF
+
+   ELSE IF key == arcade.key.right THEN
+      player_sprite.change_x = movement_speed
+   END IF
+
+   ELSE IF key == arcade.key.left THEN
+
+      player_sprite.change_x = -movement_speed
+
+   END IF
 
 ### Issues during the project and how I resolved them
 There was an issue with the pop up screens that appeared once the player had either won or lost. When the game was over, the pop up screens were covered in enemies and items to collect which was not supposed to happen. At the end, it was supposed to be a red end screen with nothing else on it. I resolved this by using a for loop where the enemy, player and items would be removed from the sprite lists. 
