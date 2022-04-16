@@ -51,29 +51,29 @@ The following pseudocode shows how the levels work:
 
 The following pseudocode describes how the player moves:
 
-   MOVEMENT_SPEED = 5
+    MOVEMENT_SPEED = 5
 
-   IF key == arcade.key.up THEN
+    IF key == arcade.key.up THEN
 
-       player_sprite.change_y = movement_speed
+        player_sprite.change_y = movement_speed
 
-   END IF
+    END IF
 
-   ELSE IF key == arcade.key.down THEN#
+    ELSE IF key == arcade.key.down THEN#
 
-       player_sprite.change_y = -movement_speed
+        player_sprite.change_y = -movement_speed
 
-   END IF
+    END IF
 
-   ELSE IF key == arcade.key.right THEN
-      player_sprite.change_x = movement_speed
-   END IF
+    ELSE IF key == arcade.key.right THEN
+       player_sprite.change_x = movement_speed
+    END IF
 
-   ELSE IF key == arcade.key.left THEN
+    ELSE IF key == arcade.key.left THEN
 
-      player_sprite.change_x = -movement_speed
+       player_sprite.change_x = -movement_speed
 
-   END IF
+    END IF
 
 ### Issues during the project and how I resolved them
 There was an issue with the pop up screens that appeared once the player had either won or lost. When the game was over, the pop up screens were covered in enemies and items to collect which was not supposed to happen. At the end, it was supposed to be a red end screen with nothing else on it. I resolved this by using a for loop where the enemy, player and items would be removed from the sprite lists. 
