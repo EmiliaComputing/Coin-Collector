@@ -23,7 +23,7 @@ I used the graphics in Python’s arcade library.
 
 The following pseudocode shows how the levels work:
 
-   FUNCTION setup_level1
+    FUNCTION setup_level1
 
      size_of_task = screen_width/80
 
@@ -45,9 +45,9 @@ The following pseudocode shows how the levels work:
 
      score = 0
 
-   END FUNCTION
+    END FUNCTION
 
-   setup_level1
+    setup_level1
 
 The following pseudocode describes how the player moves:
   MOVEMENT_SPEED = 5
