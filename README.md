@@ -41,7 +41,7 @@ The following pseudocode shows how the levels work:
 
      task = "You are stuck on a desert island and have found 20 locked suitcases. Find the keys."
 
-     Append the player sprite to the player list
+     *Append the player sprite to the player list*
 
      score = 0
 
