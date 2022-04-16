@@ -22,20 +22,32 @@ The background colour is called “unmellow yellow” and I used it because I fe
 I used the graphics in Python’s arcade library.
 
 The following pseudocode shows how the levels work:
-  FUNCTION setup_level1
-    size_of_task = screen_width/80
-    coin_list = arcade.SpriteList
-    player_list = arcade.SpriteList
-    enemy_list = arcade.SpriteList
-    player_sprite = “femalePerson_idle.png”
-    player_sprite.center_x = screen_width/2
-    player_sprite.center_y = screen_height/2
-    task = "You are stuck on a desert island and have found 20 locked suitcases. Find the keys."
-    Append the player sprite to the player list
-    score = 0
-  END FUNCTION
 
-  setup_level1
+   FUNCTION setup_level1
+
+     size_of_task = screen_width/80
+
+     coin_list = arcade.SpriteList
+
+     player_list = arcade.SpriteList
+
+     enemy_list = arcade.SpriteList
+
+     player_sprite = “femalePerson_idle.png”
+
+     player_sprite.center_x = screen_width/2
+
+     player_sprite.center_y = screen_height/2
+
+     task = "You are stuck on a desert island and have found 20 locked suitcases. Find the keys."
+
+     Append the player sprite to the player list
+
+     score = 0
+
+   END FUNCTION
+
+   setup_level1
 
 The following pseudocode describes how the player moves:
   MOVEMENT_SPEED = 5
